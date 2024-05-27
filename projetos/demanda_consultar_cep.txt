@@ -1,0 +1,21 @@
+Documentação de Projeto: Consulta de CEP
+
+Visão Geral
+Este projeto tem como objetivo desenvolver uma aplicação completa para consulta de CEPs, que 
+retorna o endereço completo associado. A solução envolve três componentes principais:
+
+    1. Banco de Dados (SQL Server)
+    2. API de Consulta (C#, ASP.NET Core.). 
+    3. Interface Web de Pesquisa (Angular)
+
+
+Tabela SQL:
+CREATE TABLE Enderecos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    CEP VARCHAR(10) NOT NULL,
+    Logradouro VARCHAR(255) NOT NULL,
+    Bairro VARCHAR(255) NOT NULL,
+    Cidade VARCHAR(255) NOT NULL,
+    Estado VARCHAR(2) NOT NULL,
+    UNIQUE (CEP)
+);
